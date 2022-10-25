@@ -28,7 +28,7 @@ public class MainClass01 {
 		String moSetName="kim";
 		Car moSetCar = new Car();
 		moSetCar.name="페라리";
-		
+		  
 		mo.setNum(moSetNum);
 		mo.setName(moSetName);
 		mo.useCar(moSetCar);
