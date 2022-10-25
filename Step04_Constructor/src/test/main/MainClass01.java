@@ -1,5 +1,6 @@
 package test.main;
 
+import test.mypac.Car;
 import test.mypac.MyObject;
 
 public class MainClass01 {
@@ -14,7 +15,25 @@ public class MainClass01 {
 		mo.walk();
 		int mo_n = mo.getNumber();
 		String mo_s = mo.getGreeting();
+		Car car_mo = mo.getCar();
 		
+		//setNum(), setName(), useCar() 메소드 호출하기
+		//메소드 호출하면서 인자로 전달할 데이터를 즉석에서 만들어서 전하기
+		mo.setNum(100);
+		mo.setName("park");
+		mo.useCar(new Car());
+		
+		// 메소드 호출하면서 인자로 전달할 값이 지역변수에 이미 존재하는 경우라고 가정
+		int moSetNum = 100;
+		String moSetName="kim";
+		Car moSetCar = new Car();
+		moSetCar.name="페라리";
+		
+		mo.setNum(moSetNum);
+		mo.setName(moSetName);
+		mo.useCar(moSetCar);
+		
+		mo.doSomething(moSetNum, moSetName, moSetCar);
 		
 	}
 }

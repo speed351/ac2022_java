@@ -20,4 +20,28 @@ public class MyObject {
 		return "안녕하세요";
 	}
 	
+	// Car type을 return하는 메소드
+	public Car getCar() {
+		return new Car();
+	}
+	
+	//int type을 메소드 인자로 전달받는 메소드
+	public void setNum(int num) {
+		System.out.println("num:"+num);
+	}
+	//string type을 메소드 인자로 전달받는 메소드
+	public void setName(String name) {
+		System.out.println("name:"+name);
+	}
+	//car type을 메소드 인자로 전달 받는 메소드
+	public void useCar(Car car) {
+		car.drive();
+	}
+	//3개의 type을 메소드의 인자로 전달받는 메소드
+	public void doSomething(int num, String msg, Car c) {
+		System.out.println("무언가를 작업합니다.");
+	}
+	
+	
+	
 }
