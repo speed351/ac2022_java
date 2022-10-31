@@ -25,7 +25,7 @@ public class MainClass06 {
 		useWeapon(w1);
 		useWeapon(w2);
 		useWeapon(new Weapon() {
-			
+		
 			@Override
 			public void attack() {
 				// TODO Auto-generated method stub
