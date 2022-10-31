@@ -1,0 +1,29 @@
+package test.main;
+
+import test.mypac.Apple;
+import test.mypac.Banana;
+import test.mypac.FruitBox;
+
+public class MainClass01 {
+	public static void main(String[] args) {
+		/*
+		 * 객체 생성시 generic 클래스는 생략 가능!
+		 * 참조값을 필드나 변수에 받을 때만 type을 정확히 지정하면 된다.
+		 */
+		FruitBox<Apple> box1 = new FruitBox<>();
+		
+		
+		//setItem() 메소드로 Apple type 전달하기
+		box1.setItem(new Apple());
+		//getItem() 메소드로 Apple type 리턴받기 
+		Apple a = box1.getItem();
+		
+		//바나나를 받는 박스
+		FruitBox<Banana> box2 = new FruitBox<>();
+		box2.setItem(new Banana());
+		Banana b = box2.getItem();
+				
+		
+		
+	}
+}
